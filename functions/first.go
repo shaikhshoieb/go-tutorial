@@ -102,6 +102,22 @@ func main() {
 	// 	return fib(i-1) + fib(i-2)
 
 	// }
+
 	fmt.Println(fibo(7))
+	numsSum := []int{1, 2, 3, 4, 5}
+	sumTotal := 0
+	for _, v := range numsSum {
+		sumTotal += v
+	}
+	fmt.Println("sum total:", sumTotal)
+
+	newMap := map[string]string{"a": "a1", "b": "b1", "c": "c1"}
+	for k, v := range newMap {
+		fmt.Printf("%s : %s \n", k, v)
+	}
+
+	for i, k := range "go" {
+		fmt.Println(i, k)
+	}
 
 }
